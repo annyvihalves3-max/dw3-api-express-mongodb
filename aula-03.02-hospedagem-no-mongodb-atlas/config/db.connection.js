@@ -6,7 +6,7 @@ const dbUser = "annyvihalves3_db_user";
 const dbPassoword = "SM0uaH0JuFuHySOF";
 const connect = () => {
     mongoose.connect(
-        `mongodb+srv://annyvihalves3_db_user:SM0uaH0JuFuHySOF@cluster0.qxxqdxd.mongodb.net/?appName=Cluster0`
+        `mongodb+srv://${annyvihalves3_db_user}:${SM0uaH0JuFuHySOF}@cluster0.qxxqdxd.mongodb.net/api-thegames?appName=Cluster0`
     );
     const connection = mongoose.connection;
     connection.on("error", () => {

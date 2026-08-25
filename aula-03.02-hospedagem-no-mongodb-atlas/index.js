@@ -2,6 +2,8 @@
 import express, { urlencoded } from "express";
 //importando o mongoose
 import mongoose from "mongoose";
+// Iniciando conexão com o bando de dados do mongodb
+import mongoose from "./config/db.connection.js";
 //importando o model
 import Game from "./models/Games.js";
 //importar as rotas
