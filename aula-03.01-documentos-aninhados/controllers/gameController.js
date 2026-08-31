@@ -69,7 +69,7 @@ const updateGame = async (req, res) => {
         }
     } catch (error) {
         console.log(error);
-        res.Status(500).json({error: 'Ocorreu um erro ao alterar o jogo. Erro interno no servidor.'});
+        res.status(500).json({error: 'Ocorreu um erro ao alterar o jogo. Erro interno no servidor.'});
     }
 }
 
